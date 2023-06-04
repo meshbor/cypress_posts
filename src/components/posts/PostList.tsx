@@ -7,7 +7,7 @@ export const PostList: FC<{ posts: Post[] }> = ({ posts }) => {
   if (!posts.length) return <Typography>Post list is empty</Typography>
 
   return (
-    <Grid container spacing={2} justifyContent="flex-start" alignItems="stretch">
+    <Grid id="post-list-id" container spacing={2} justifyContent="flex-start" alignItems="stretch">
       {posts.map((post) => (
         <PostListItem key={post.id} {...post} />
       ))}

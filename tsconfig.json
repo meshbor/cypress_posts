@@ -20,6 +20,6 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": "./src"
   },
-  "include": ["src"],
+  "include": ["src",  "cypress/support/*.ts", "cypress/e2e/*.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
